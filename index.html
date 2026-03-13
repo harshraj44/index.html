@@ -10,7 +10,7 @@
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, sans-serif;
 background:#020617;
 color:white;
 text-align:center;
@@ -19,78 +19,93 @@ text-align:center;
 /* NAVBAR */
 
 .navbar{
-position:relative;
 display:flex;
 align-items:center;
-padding:20px;
+justify-content:center;
+position:relative;
+padding:15px 20px;
 background:#020617;
 border-bottom:1px solid #111;
 }
 
 .logo{
-height:50px;
+position:absolute;
+left:20px;
+height:45px;
 }
 
 .brand{
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-font-size:42px;
+font-size:38px;
 font-weight:900;
 color:#22d3ee;
 letter-spacing:4px;
 }
 
+/* MOBILE FIX */
+
+@media (max-width:600px){
+
+.brand{
+font-size:26px;
+}
+
+.logo{
+height:35px;
+left:10px;
+}
+
+}
+
 /* SECTIONS */
 
 .section{
-padding:70px 20px;
+padding:60px 20px;
 }
 
 h1{
 color:#22d3ee;
+margin-bottom:20px;
 }
 
 img{
 max-width:90%;
 border-radius:15px;
-margin-top:25px;
-box-shadow:0 0 25px rgba(0,255,255,0.2);
+margin-top:20px;
+box-shadow:0 0 20px rgba(0,255,255,0.25);
 }
 
-/* PLATFORM SECTION */
+/* PLATFORM */
 
 .platform{
-margin-top:40px;
 display:flex;
 justify-content:center;
-gap:25px;
+gap:20px;
 flex-wrap:wrap;
+margin-top:30px;
 }
 
 .card{
 background:#0b0b0b;
 padding:25px;
-border-radius:12px;
-width:160px;
+border-radius:10px;
+width:150px;
 font-size:18px;
 }
 
 /* BUTTONS */
 
 .buttons{
-margin-top:40px;
+margin-top:30px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 28px;
-margin:12px;
+padding:12px 25px;
+margin:10px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 color:white;
-font-size:16px;
 }
 
 .call{background:#007bff;}
@@ -103,7 +118,7 @@ font-size:16px;
 
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
 
 <div class="navbar">
 
@@ -119,7 +134,7 @@ font-size:16px;
 
 <h1>Software Features</h1>
 
-<img src="Screenshot 2026-03-14 002946.png">
+<img src="Screenshot 2026-03-14 002835.png">
 
 </div>
 
@@ -129,7 +144,7 @@ font-size:16px;
 
 <h1>One Year Pricing Plans</h1>
 
-<img src="Screenshot 2026-03-14 002835.png">
+<img src="Screenshot 2026-03-14 002946.png">
 
 </div>
 
